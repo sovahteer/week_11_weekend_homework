@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>W11-Wknd-HW</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <form id="new-item-form">
+        <div id="form-wrapper">
+            <div class="form-item">
+                <label for="name" class="primary">Name</label>
+                <input type="text" id="name" required/>
+            </div>
+
+            <div class="form-item">
+                <label for="shipClass" class="primary">Class</label>
+                    <input type="radio" name="shipClass" value="ship of the line">Ship of the Line<br>
+                    <input type="radio" name="shipClass" value="frigate">Frigate<br>
+                    <input type="radio" name="shipClass" value="sloop">Sloop
+            </div>
+
+        </div>
+        <input type="submit" value="save"/>
+    </form>
+
+    <h1>Fleet Roster</h1>
+    <div id="fleet-roster"></div>
+
+    <button id="delete-all">Delete All</button>
+
+</body>
+
+</html>
